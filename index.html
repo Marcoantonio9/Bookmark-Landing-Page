@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <a class="Logotipo" href="#">
+                <img class="img-fluid" src="imagens/logo-bookmark.svg">
+            </a>
+            
+            <ul class="letrasMenu">
+                <li>
+                    <a>Features</a>  
+                </li>
+                <li>
+                    <a>Pricing</a>  
+                </li>
+                <li>
+                    <a>Contact</a>  
+                </li>
+                <li>
+                    <a>
+                        <button class="btn btn-outline btnEstilo">Login</button>
+                    </a>  
+                </li>
+            </ul>
+        </nav>
+
+        <section class="container-fluid mt-5" id="conteudo-inicial">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-5" id="area-princi">
+                    <h1 id="txt-h1">A Simple Bookmark Manager</h1>
+                    <p id="txt-inicial">A clean and simple interface to organize your favourite websites. Open a new 
+                        browser tab and see your sites load instantly. Try it for free.</p>
+                        <button id="btnChrome">Get It On Chrome</button> <button id="btnFirefox">Get It On Firefox</button>
+                </div>
+
+                <div class="col-12 col-md-6" id="img-cont-inicial">
+                    <div>
+                        <img class="img-fluid mt-4" src="imagens/illustration-hero.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Features-->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 id="titulo-features">Features</h3>
+                    <p id="txt-features">  Our aim is to make it quick and easy for you to access your favourite websites. 
+                    Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
+
+                <div class=" col-12 col-md-6" id="botoes">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4">
+                            <span onclick="primeiroBotao()" id="btnFt1">
+                                <a>
+                                    Simple Bookmarking
+                                </a>
+                            </span> 
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <span onclick="segundoBotao()" id="btnFt2">
+                                <a>
+                                    Speedy Searching
+                                </a>
+                            </span> 
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4">                              
+                            <span onclick="terceiroBotao()" id="btnFt3">
+                                <a>
+                                    Easy Sharing
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Imagens Features-->
+                <div class="container-fluid espacamentoAbaixoBtns mb-5" id="primeiraFeatures">
+                    <div class="row">
+                        <div id="img-features-fundo" class="col-8 col-md-6">
+                            <img id="img-features" class="img-fluid" src="imagens/illustration-features-tab-1.svg">
+                        </div>
+        
+                        <div class="col-12 col-md-6">
+                            <h3 id="book-h3">Bookmark in one click</h3>
+                            <p id="book-txt">  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                gives you complete control over how you manage your favourite sites.
+                            </p>
+                            <button id="btnMore-Info">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid espacamentoAbaixoBtns mb-5" id="segundaFeatures">
+                    <div class="row">
+                        <div id="img-features-fundo" class="col-8 col-md-6">
+                            <img id="img-features2" class="img-fluid" src="imagens/illustration-features-tab-2.svg">
+                        </div>
+        
+                        <div class="col-12 col-md-6">
+                            <h3 id="book-h3-2">Intelligent search</h3>
+                            <p id="book-txt-2"> Our powerful search feature will help you find saved sites in no time at all. 
+                                No need to trawl through all of your bookmarks.
+                            </p>
+                            <button id="btnMore-Info-2">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid espacamentoAbaixoBtns mb-5" id="terceiraFeatures">
+                    <div class="row">
+                        <div id="img-features-fundo" class="col-8 col-md-6">
+                            <img id="img-features3" class="img-fluid" src="imagens/illustration-features-tab-3.svg">
+                        </div>
+        
+                        <div class="col-12 col-md-6">
+                            <h3 id="book-h3-2">Share your bookmarks</h3>
+                            <p id="book-txt-2">
+                                Easily share your bookmarks and collections with others. Create a shareable 
+                                link that you can send at the click of a button.
+                            </p>
+                            <button id="btnMore-Info-2">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="navegadores" class="container">
+            <div class="row" id="navegadores-logo">
+                <div id="titulo-navegadores" class="col-12 col-md-12">
+                    <h3>Download the extension</h3>
+                    <p>  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                        got a favourite you’d like us to prioritize.
+                    </p>
+                </div> 
+
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-3 posicaoChrome">
+                    <div class="cards-nav cards-nav-chrome">
+                        <img class="img-fluid  logo-nav" src="imagens/logo-chrome.svg">
+                        <h3>Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                        <div class="btn-navegador">
+                            <button>Add & Install Extension</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 posicaoFirefox">
+                    <div class="cards-nav cards-nav-firefox">
+                        <img class="img-fluid logo-nav" src="imagens/logo-firefox.svg">
+                        <h3>Add to Firefox</h3>
+                        <p>Minimum version 55</p>
+                        <div class="btn-navegador">
+                            <button>Add & Install Extension</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 posicaoOpera mr-1">
+                    <div class="cards-nav cards-nav-opera">
+                        <img class="img-fluid logo-nav" src="imagens/logo-opera.svg">
+                        <h3>Add to Opera</h3>
+                        <p>Minimum version 46</p>
+                        <div class="btn-navegador">
+                            <button>Add & Install Extension</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+               
+            </div>
+        </section>
+        
+        <section id="faq" class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>  Here are some of our FAQs. If you have any other questions you’d like 
+                        answered please feel free to email us.
+                    </p>
+                </div>
+
+                <div id="questoes" class="container">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+        
+                        <div class="col-md-4">
+                            <div class="row">
+                                <span class="btnQuestao col-12 col-md-12 btnQ1" onclick="abrirPrimeiroBtn()">What is Bookmark? <i class="fa fa-sort-down btnBaixo"></i> <i class="fa fa-sort-asc btnCima" style="display: none;"></i></span>
+                                <p id="quesfaq1">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
+                                </p>
+
+                                <span class="btnQuestao col-12 col-md-12 btnQ2" onclick="abrirSegundoBtn()">How can I request a new browser? <i class="fa fa-sort-down btnBaixo2"></i> <i class="fa fa-sort-asc btnCima2" style="display: none;"></i></span>
+                                <p id="quesfaq2">
+                                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                                </p>
+
+                                <span class="btnQuestao col-12 col-md-12 btnQ3" onclick="abrirTerceiroBtn()">Is there a mobille app? <i class="fa fa-sort-down btnBaixo3"></i> <i class="fa fa-sort-asc btnCima3" style="display: none;"></i> </span>
+                                <p id="quesfaq3">
+                                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                                    sollicitudin ex et ultricies bibendum.
+                                </p>
+
+                                <span class="btnQuestao col-12 col-md-12 btnQ4" onclick="abrirQuartoBtn()">What about other Chromium browsers? <i class="fa fa-sort-down btnBaixo4"></i> <i class="fa fa-sort-asc btnCima4" style="display: none;"></i></span>
+                                <p id="quesfaq4">
+                                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                                    vitae neque eget nisl gravida pellentesque non ut velit.
+                                </p>
+
+                                <div id="btnQuesPosicao">
+                                    <button id="btnMoreInfo-Ques">More info</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="area-formulario" class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <span>35.000 + Already Joined</span>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <h3>
+                        Stay up-to-date with what we’re doing
+                    </h3>
+                </div>
+
+                <div class="col-md-12">
+                    <input type="email" name="email" id="formulario-final" placeholder="Enter your email address">
+                    <button  id="btn-final" onclick="validarEmail()">Contact Us</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-md-3">
+                    <img class="img-fluid icon-final" alt="Logo" src="imagens/logo-bookmark 3.png">
+                </div>
+                
+                <div class="col-12 col-md-1 centralizar-final">
+                    <span>Features</span>
+                </div>
+
+                <div class="col-12 col-md-1 centralizar-final">
+                    <span>Pricing</span>
+                </div>
+
+                <div class="col-12 col-md-1 centralizar-final">
+                    <span>Contact</span>
+                </div>
+
+                <div id="redes-sociais" class="col-md-3">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="imagens/icon-facebook.svg">
+                            </div>
+
+                            <div class="col-md-2">
+                                <img src="imagens/icon-twitter.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/Marcoantonio9">Marco Antonio :)</a>.
+        </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
